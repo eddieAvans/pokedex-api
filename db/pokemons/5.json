@@ -1,0 +1,21 @@
+{
+    "abilities": [
+    {
+      "ability": { "name": "solar-power" }
+    },
+    {
+      "ability": { "name": "blaze" }
+    }
+    ],
+    "height": 11,
+    "id": 5,
+    "name": "charmeleon",
+    "species": {
+        "name": "charmeleon",
+        "url": "https://pokeapi.co/api/v2/pokemon-species/2/"
+    },
+    "types":  [
+	    { "type": { "name": "fire" } }
+    ],
+    "weight": 190
+}

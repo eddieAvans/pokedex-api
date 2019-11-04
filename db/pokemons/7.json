@@ -1,0 +1,21 @@
+{
+    "abilities": [
+    {
+      "ability": { "name": "rain-dish" }
+    },
+    {
+      "ability": { "name": "torrent" }
+    }
+    ],
+    "height": 5,
+    "id": 7,
+    "name": "squirtle",
+    "species": {
+        "name": "squirtle",
+        "url": "https://pokeapi.co/api/v2/pokemon-species/3/"
+    },
+    "types":  [
+	    { "type": { "name": "water" } }
+    ],
+    "weight": 90
+}

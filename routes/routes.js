@@ -11,27 +11,16 @@ router.get('/', (req, res) => {
 
 router.get('/pokemon/:id', handle('PokemonController@getPokemon'));
 router.get('/pokemon-species/:id', handle('PokemonController@getPokemonSpecies'));
+router.get('/evolution-chain/:id', handle('PokemonController@getEvolutionChain'));
 router.get('/move/:id', handle('MoveController@getMove'));
 
-router.post('/hack', verifyToken, (req, res) => {
-    jwt.verify(req.token, 'secretKey', (err, auth) => {
-        if (err) {
-            res.sendStatus(403);
-        } else {
-            res.json({
-                message: 'Post created...',
-                auth: auth
-            });
-        }
-    });
-});
+router.post('/add', verifyToken, handle('PokemonController@addPokemon'));
 
 router.post('/login', (req, res) => {
     // Mock user
     const user = {
         id: 1,
-        username: 'eddie',
-        email: 'eddie@gmail.com'
+        username: 'eddie'
     }
 
     jwt.sign({user}, 'secretKey', { expiresIn: '500s' }, (err, token) => {
@@ -48,7 +37,12 @@ function verifyToken(req, res, next) {
     if (typeof accessHeader !== 'undefined') {
         const access = accessHeader.split(' ');
         const accessToken = access[1];
-        req.token = accessToken;
+
+        jwt.verify(accessToken, 'secretKey', (err, auth) => {
+            if (err) {
+                res.sendStatus(403);
+            }
+        });
         next();
     } else {
         res.sendStatus(403);

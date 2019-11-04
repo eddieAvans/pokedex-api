@@ -1,0 +1,21 @@
+{
+    "abilities": [
+    {
+      "ability": { "name": "lightning-rod" }
+    },
+    {
+      "ability": { "name": "static" }
+    }
+    ],
+    "height": 3,
+    "id": 172,
+    "name": "pichu",
+    "species": {
+        "name": "pichu",
+        "url": "https://pokeapi.co/api/v2/pokemon-species/4/"
+    },
+    "types":  [
+	    { "type": { "name": "electric" } }
+    ],
+    "weight": 20
+}

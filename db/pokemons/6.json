@@ -1,0 +1,22 @@
+{
+    "abilities": [
+    {
+      "ability": { "name": "solar-power" }
+    },
+    {
+      "ability": { "name": "blaze" }
+    }
+    ],
+    "height": 17,
+    "id": 6,
+    "name": "charizard",
+    "species": {
+        "name": "charizard",
+        "url": "https://pokeapi.co/api/v2/pokemon-species/2/"
+    },
+    "types":  [
+        { "type": { "name": "flying" } },
+	    { "type": { "name": "fire" } }
+    ],
+    "weight": 905
+}
