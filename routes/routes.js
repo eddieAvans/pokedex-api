@@ -1,5 +1,5 @@
 const express = require('express');
-const jwt = require('jsonwebtoken');
+const verifier = require('./middlewares/jwtVerifier');
 const router = express.Router();
 const handle = require('../helpers/handle');
 
@@ -21,7 +21,7 @@ router.get('/pokemon/:id', handle('PokemonController@getPokemon'));
 router.get('/pokemon-species/:id', handle('PokemonController@getPokemonSpecies'));
 router.get('/evolution-chain/:id', handle('PokemonController@getEvolutionChain'));
 
-router.post('/update', verifyToken, handle('PokemonController@updatePokemon'));
+router.post('/update', verifier.verifyToken, handle('PokemonController@updatePokemon'));
 
 router.post('/login', (req, res) => {
     // Mock user
@@ -36,24 +36,5 @@ router.post('/login', (req, res) => {
         });
     });
 });
-
-// Verify Token
-function verifyToken(req, res, next) {
-    // Get auth header value
-    const accessHeader = req.headers['authorization'];
-    if (typeof accessHeader !== 'undefined') {
-        const access = accessHeader.split(' ');
-        const accessToken = access[1];
-
-        jwt.verify(accessToken, 'secretKey', (err, auth) => {
-            if (err) {
-                res.sendStatus(403);
-            }
-        });
-        next();
-    } else {
-        res.sendStatus(403);
-    }
-};
 
 module.exports = router;

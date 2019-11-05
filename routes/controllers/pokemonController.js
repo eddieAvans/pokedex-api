@@ -42,7 +42,6 @@ module.exports = class PokemonController {
                 secondary_ability,
                 height,
                 weight } = req.body;
-        
         const pokemonId = this.pokemonService.getPokemonId(id);
         const message = await this.pokemonService.updatePokemon(pokemonId, name, type, secondary_type, ability, secondary_ability, height, weight);
         

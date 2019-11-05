@@ -12,7 +12,7 @@
     "name": "venusaur",
     "species": {
         "name": "venusaur",
-        "url": "https://pokeapi.co/api/v2/pokemon-species/1/"
+        "url": "https://pokemon-api-2116524.herokuapp.com/api/pokemon-species/1"
     },
     "types":  [
 	    { "type": { "name": "poison" } },

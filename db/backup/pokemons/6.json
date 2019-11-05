@@ -12,7 +12,7 @@
     "name": "charizard",
     "species": {
         "name": "charizard",
-        "url": "https://pokeapi.co/api/v2/pokemon-species/2/"
+        "url": "https://pokemon-api-2116524.herokuapp.com/api/pokemon-species/2"
     },
     "types":  [
         { "type": { "name": "flying" } },
