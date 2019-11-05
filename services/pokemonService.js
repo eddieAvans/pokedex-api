@@ -12,10 +12,7 @@ module.exports = class PokemonService {
             'charizard': 6,
             'squirtle': 7,
             'wartortle': 8,
-            'blastoise': 9,
-            'pichu': 10,
-            'pikachu': 11,
-            'raichu': 12
+            'blastoise': 9
         }
     }
 
