@@ -23,13 +23,13 @@
             "evolves_to": [],
             "species": {
               "name": "venusaur",
-              "url": "https://pokemon-api-2116524.herokuapp.com/api/pokemon-species/3/"
+              "url": "https://pokemon-api-2116524.herokuapp.com/api/pokemon-species/1/"
             }
           }
         ],
         "species": {
           "name": "ivysaur",
-          "url": "https://pokemon-api-2116524.herokuapp.com/api/pokemon-species/2/"
+          "url": "https://pokemon-api-2116524.herokuapp.com/api/pokemon-species/1/"
         }
       }
     ],
