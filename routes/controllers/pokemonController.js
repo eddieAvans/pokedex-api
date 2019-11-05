@@ -43,7 +43,7 @@ module.exports = class PokemonController {
                 height,
                 weight } = req.body;
         
-        const pokemonId = this.pokemonService.getPokemonId(req['params']['id']);
+        const pokemonId = this.pokemonService.getPokemonId(id);
         const message = await this.pokemonService.updatePokemon(pokemonId, name, type, secondary_type, ability, secondary_ability, height, weight);
         
         if(pokemon === undefined) {
