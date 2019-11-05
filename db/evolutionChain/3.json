@@ -23,19 +23,19 @@
             "evolves_to": [],
             "species": {
               "name": "blastoise",
-              "url": "https://pokeapi.co/api/v2/pokemon-species/3/"
+              "url": "https://pokemon-api-2116524.herokuapp.com/api/pokemon-species/3/"
             }
           }
         ],
         "species": {
           "name": "wartortle",
-          "url": "https://pokeapi.co/api/v2/pokemon-species/3/"
+          "url": "https://pokemon-api-2116524.herokuapp.com/api/pokemon-species/3/"
         }
       }
     ],
 	"species": {
       "name": "squirtle",
-      "url": "https://pokeapi.co/api/v2/pokemon-species/3/"
+      "url": "https://pokemon-api-2116524.herokuapp.com/api/pokemon-species/3/"
     }
     }
 }

@@ -23,19 +23,19 @@
             "evolves_to": [],
             "species": {
               "name": "raichu",
-              "url": "https://pokeapi.co/api/v2/pokemon-species/4/"
+              "url": "https://pokemon-api-2116524.herokuapp.com/api/pokemon-species/4/"
             }
           }
         ],
         "species": {
           "name": "pikachu",
-          "url": "https://pokeapi.co/api/v2/pokemon-species/4/"
+          "url": "https://pokemon-api-2116524.herokuapp.com/api/pokemon-species/4/"
         }
       }
     ],
 	"species": {
       "name": "pichu",
-      "url": "https://pokeapi.co/api/v2/pokemon-species/4/"
+      "url": "https://pokemon-api-2116524.herokuapp.com/api/pokemon-species/4/"
     }
     }
 }

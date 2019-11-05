@@ -12,7 +12,7 @@
     "name": "pikachu",
     "species": {
         "name": "pikachu",
-        "url": "https://pokeapi.co/api/v2/pokemon-species/4/"
+        "url": "https://pokemon-api-2116524.herokuapp.com/api/pokemon-species/4"
     },
     "types":  [
 	    { "type": { "name": "electric" } }
