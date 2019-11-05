@@ -46,7 +46,7 @@ module.exports = class PokemonController {
         const pokemonId = this.pokemonService.getPokemonId(id);
         const message = await this.pokemonService.updatePokemon(pokemonId, name, type, secondary_type, ability, secondary_ability, height, weight);
         
-        if(pokemon === undefined) {
+        if(message === undefined) {
             return res.sendStatus(404);
         }
         return res.json(message);
