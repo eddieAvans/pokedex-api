@@ -8,6 +8,6 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/api', routes);
 
-app.listen(5000, () => console.log('Server started on port 5000'));
+app.listen(process.env.PORT || 5000, () => console.log('Server started'));
 
 module.exports = app;
