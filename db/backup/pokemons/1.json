@@ -1,0 +1,22 @@
+{
+    "abilities": [
+    {
+      "ability": { "name": "chlorophyll" }
+    },
+    {
+      "ability": { "name": "overgrow" }
+    }
+    ],
+    "height": 7,
+    "id": 1,
+    "name": "bulbasaur",
+    "species": {
+        "name": "bulbasaur",
+        "url": "https://pokeapi.co/api/v2/pokemon-species/1/"
+    },
+    "types":  [
+	    { "type": { "name": "poison" } },
+	    { "type": { "name": "grass" } }
+    ],
+    "weight": 69
+}

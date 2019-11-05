@@ -1,0 +1,21 @@
+{
+    "abilities": [
+    {
+      "ability": { "name": "rain-dish" }
+    },
+    {
+      "ability": { "name": "torrent" }
+    }
+    ],
+    "height": 16,
+    "id": 9,
+    "name": "blastoise",
+    "species": {
+        "name": "blastoise",
+        "url": "https://pokeapi.co/api/v2/pokemon-species/3/"
+    },
+    "types":  [
+	    { "type": { "name": "water" } }
+    ],
+    "weight": 885
+}

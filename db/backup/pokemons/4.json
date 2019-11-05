@@ -1,0 +1,21 @@
+{
+    "abilities": [
+    {
+      "ability": { "name": "solar-power" }
+    },
+    {
+      "ability": { "name": "blaze" }
+    }
+    ],
+    "height": 6,
+    "id": 4,
+    "name": "charmander",
+    "species": {
+        "name": "charmander",
+        "url": "https://pokeapi.co/api/v2/pokemon-species/2/"
+    },
+    "types":  [
+	    { "type": { "name": "fire" } }
+    ],
+    "weight": 85
+}

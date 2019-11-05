@@ -1,0 +1,22 @@
+{
+    "abilities": [
+    {
+      "ability": { "name": "chlorophyll" }
+    },
+    {
+      "ability": { "name": "overgrow" }
+    }
+    ],
+    "height": 20,
+    "id": 3,
+    "name": "venusaur",
+    "species": {
+        "name": "venusaur",
+        "url": "https://pokeapi.co/api/v2/pokemon-species/1/"
+    },
+    "types":  [
+	    { "type": { "name": "poison" } },
+	    { "type": { "name": "grass" } }
+    ],
+    "weight": 1000
+}

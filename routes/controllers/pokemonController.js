@@ -4,29 +4,38 @@ module.exports = class PokemonController {
     }
 
     async getPokemon(req, res) {
-        const id = req['params']['id'];
+        const id = this.pokemonService.getPokemonId(req['params']['id']);
         const pokemon = await this.pokemonService.getPokemon(id);
 
         return res.json(pokemon);
     }
 
     async getPokemonSpecies(req, res) {
-        const id = req['params']['id'];
+        const id = this.pokemonService.getPokemonId(req['params']['id']);
         const species = await this.pokemonService.getPokemonSpecies(id);
 
         return res.json(species);
     }
 
     async getEvolutionChain(req, res) {
-        const id = req['params']['id'];
+        const id = this.pokemonService.getPokemonId(req['params']['id']);
         const evolutionChain = await this.pokemonService.getEvolutionChain(id);
 
         return res.json(evolutionChain);
     }
 
-    async addPokemon(req, res) {
-        await this.pokemonService.addPokemon();
-        console.log('done');
+    async updatePokemon(req, res) {
+        const { id,
+                name,
+                type,
+                secondary_type,
+                ability,
+                secondary_ability,
+                height,
+                weight } = req.body;
+        
+        const pokemonId = this.pokemonService.getPokemonId(req['params']['id']);
+        await this.pokemonService.updatePokemon(pokemonId, name, type, secondary_type, ability, secondary_ability, height, weight);
         return res.json('editing...');
     }
 }

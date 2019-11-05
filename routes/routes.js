@@ -14,7 +14,7 @@ router.get('/pokemon-species/:id', handle('PokemonController@getPokemonSpecies')
 router.get('/evolution-chain/:id', handle('PokemonController@getEvolutionChain'));
 router.get('/move/:id', handle('MoveController@getMove'));
 
-router.post('/add', verifyToken, handle('PokemonController@addPokemon'));
+router.post('/update', verifyToken, handle('PokemonController@updatePokemon'));
 
 router.post('/login', (req, res) => {
     // Mock user
@@ -23,7 +23,7 @@ router.post('/login', (req, res) => {
         username: 'eddie'
     }
 
-    jwt.sign({user}, 'secretKey', { expiresIn: '500s' }, (err, token) => {
+    jwt.sign({user}, 'secretKey', (err, token) => {
         res.json({
             token
         });
