@@ -12,7 +12,6 @@ router.get('/', (req, res) => {
 router.get('/pokemon/:id', handle('PokemonController@getPokemon'));
 router.get('/pokemon-species/:id', handle('PokemonController@getPokemonSpecies'));
 router.get('/evolution-chain/:id', handle('PokemonController@getEvolutionChain'));
-router.get('/move/:id', handle('MoveController@getMove'));
 
 router.post('/update', verifyToken, handle('PokemonController@updatePokemon'));
 
